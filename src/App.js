@@ -22,9 +22,9 @@ const App = () => {
     const [scores, setScores] = useState({ xScore: 0, oScore: 0 });
     const [gameOver, setGameOver] = useState(false);
 
-    const handleBoxClick = (boxIndex) => {
-        const updatedBoard = board.map((value, index) => {
-            if (index === boxIndex) {
+    const handleBoxClick = (boxIdx) => {
+        const updatedBoard = board.map((value, idx) => {
+            if (idx === boxIdx) {
                 return xPlaying ? "X" : "O";
             } else {
                 return value;
